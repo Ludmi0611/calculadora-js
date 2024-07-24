@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <h2>Realizado por Ludmila Sanchez</h2>
+
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly>
+        <br>
+        <input type="button" value="1" class="numero" onclick="agregar('1')">
+        <input type="button" value="2" class="numero" onclick="agregar('2')">
+        <input type="button" value="3" class="numero" onclick="agregar('3')">
+        <input type="button" value="+" class="operador" onclick="agregar('+')">
+        <br>
+        <input type="button" value="4" class="numero" onclick="agregar('4')">
+        <input type="button" value="5" class="numero" onclick="agregar('5')">
+        <input type="button" value="6" class="numero" onclick="agregar('6')">
+        <input type="button" value="-" class="operador" onclick="agregar('-')">
+        <br>
+        <input type="button" value="7" class="numero" onclick="agregar('7')">
+        <input type="button" value="8" class="numero" onclick="agregar('8')">
+        <input type="button" value="9" class="numero" onclick="agregar('9')">
+        <input type="button" value="*" class="operador" onclick="agregar('*')">
+        <br>
+        <input type="button" value="0" class="numero" onclick="agregar('0')">
+        <input type="button" value="." class="operador" onclick="agregar('.')">
+        <input type="button" value="/" class="operador" onclick="agregar('/')">
+        <input type="button" value="=" class="operador" onclick="calcular('=')">
+        <br>
+        <input type="button" value="C" class="operador" onclick="borrar()">
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
